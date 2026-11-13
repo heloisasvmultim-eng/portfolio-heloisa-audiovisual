@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio audiovisual de Heloisa Silva — audiovisual, social media, artes e retratos.">
+  <meta name="theme-color" content="#141311">
+  <title>Heloisa Silva — Portfólio Audiovisual</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Lora:ital,wght@0,400;0,500;1,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Heloisa Silva — início">HS</a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+    <a href="#sobre">Sobre</a>
+    <a href="#casamentos">Casamentos</a>
+    <a href="#artes">Artes</a>
+    <a href="#social-media">Social Media</a>
+    <a href="#retratos">Retratos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <main>
+    <!-- Abertura em tela cheia -->
+    <section id="inicio" class="banner hero">
+      <img class="hero-photo" src="img/perfil-helo.jpg" alt="Heloisa Silva em uma passarela, com a cidade iluminada ao fundo">
+      <div class="banner-inner">
+        <p class="kicker">Portfólio audiovisual</p>
+        <h1>Heloisa<br>Silva</h1>
+        <p class="kicker">Audiovisual · Social media · Design · Fotografia</p>
+      </div>
+      <a class="scroll-cue" href="#sobre" aria-label="Rolar para Sobre">↓</a>
+    </section>
+
+    <!-- Apresentação -->
+    <section id="sobre" class="intro">
+      <h2 class="intro-title"><em>Oi!</em> Eu sou a Heloisa.</h2>
+      <p class="intro-text">
+        Natural de Vila Velha e formada em Técnico em Rádio e TV. Tenho grande interesse pelas áreas de audiovisual e redes sociais, onde busco constantemente desenvolver minhas habilidades e contribuir com projetos criativos e inovadores.
+      </p>
+      <p class="intro-links">
+        Faço <a href="#casamentos">filmes de casamento</a>, <a href="#social-media">social media</a>,
+        <a href="#artes">artes</a> e <a href="#retratos">retratos</a> — ideias em movimento, histórias em imagem.
+      </p>
+      <a class="btn" href="#contato">Fale comigo</a>
+    </section>
+
+    <div id="projetos">
+      <!-- 01 Casamentos -->
+      <section id="casamentos" class="work-section">
+        <div class="banner section-banner" style="--bg: url('img/casamentos/casamento-2.jpg'); --pos: center 30%">
+          <div class="banner-inner">
+            <p class="kicker">01 · Vídeos</p>
+            <h2>Casamentos</h2>
+            
+</a>
+
+          </div>
+          <a class="scroll-cue" href="#wedding-gallery" aria-label="Ver casamentos">+</a>
+        </div>
+        <div class="work-body">
+          <p class="section-description">Filmes e momentos que merecem ser revividos.</p>
+          <div id="wedding-gallery" class="media-grid"></div>
+        </div>
+      </section>
+
+      <!-- 02 Artes -->
+      <section id="artes" class="work-section">
+        <div class="banner section-banner banner--blur" style="--bg: url('img/artes/arte-1.png')">
+          <div class="banner-inner">
+            <p class="kicker">02 · Design gráfico</p>
+            <h2>Artes</h2>
+          </div>
+          <a class="scroll-cue" href="#art-gallery" aria-label="Ver artes">+</a>
+        </div>
+        <div class="work-body">
+          <p class="section-description">Peças gráficas, ideias e estudos visuais.</p>
+          <div id="art-gallery" class="media-grid"></div>
+        </div>
+      </section>
+
+      <!-- 03 Social Media -->
+      <section id="social-media" class="work-section">
+        <div class="banner section-banner banner--blur" style="--bg: url('img/social-media/posterilha.jpg'); --pos: center 70%">
+          <div class="banner-inner">
+            <p class="kicker">03 · Conteúdo e narrativa</p>
+            <h2>Social Media</h2>
+          </div>
+          <a class="scroll-cue" href="#ilha" aria-label="Ver social media">+</a>
+        </div>
+        <div class="work-body">
+          <article id="ilha" class="featured-project">
+            <a id="island-link" class="featured-cover" href="#" aria-label="Abrir projeto Ilha da Pólvora">
+              <img class="featured-poster" src="img/social-media/posterilha.jpg" alt="Cartaz do documentário Ilha da Pólvora: esquecida pela sentença">
+            </a>
+            <div class="featured-copy">
+              <p class="kicker">Projeto em destaque · 2022</p>
+              <h3>Ilha da Pólvora</h3>
+              <p>Documentário realizado para o projeto final do curso técnico em Rádio e Televisão, no CEET Vasco Coutinho, em 2022.</p>
+              <p class="role-note"><span>Minha atuação</span>Social media e auxiliar de edição.</p>
+              <a id="island-cta" class="btn btn-outline" href="#" target="_blank" rel="noreferrer">Ver o projeto no Instagram ↗</a>
+            </div>
+          </article>
+          <div id="social-gallery" class="media-grid"></div>
+        </div>
+      </section>
+
+      <!-- 04 Retratos -->
+      <section id="retratos" class="work-section">
+        <div class="banner section-banner" style="--bg: url('img/retratos/retrato-3.jpg'); --pos: center 35%">
+          <div class="banner-inner">
+            <p class="kicker">04 · Fotografia</p>
+            <h2>Retratos</h2>
+          </div>
+          <a class="scroll-cue" href="#portrait-gallery" aria-label="Ver retratos">+</a>
+        </div>
+        <div class="work-body">
+          <p class="section-description">Pessoas, expressões e pequenos detalhes.</p>
+          <div id="portrait-gallery" class="media-grid"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Contato -->
+    <section id="contato" class="contact">
+      <p class="kicker">Vamos conversar?</p>
+      <h2>Contato</h2>
+      <p class="contact-lead"><em>Espero trabalhar em breve com você.</em></p>
+      <a class="btn btn-light" href="https://wa.me/5527992045612?text=Ol%C3%A1%2C%20Heloisa!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noreferrer" aria-label="Conversar com Heloisa pelo WhatsApp">Me chama no WhatsApp ↗</a>
+      <div class="contact-links">
+        <a href="mailto:silvaheloisav@outlook.com"><span>E-mail</span>silvaheloisav@outlook.com</a>
+        <a href="https://www.behance.net/heloisasv" target="_blank" rel="noreferrer"><span>Behance</span>behance.net/heloisasv</a>
+        <a href="https://www.instagram.com/portihelo/" target="_blank" rel="noreferrer"><span>Instagram</span>@portihelo</a>
+      </div>
+      <footer class="site-footer">
+        <span>Heloisa Silva © <span id="year"></span></span>
+        <a href="#inicio">Voltar ao topo ↑</a>
+      </footer>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Visualização de mídia">
+    <button class="lightbox-close" aria-label="Fechar visualização">×</button>
+    <button class="lightbox-prev" aria-label="Mídia anterior">←</button>
+    <div class="lightbox-content"></div>
+    <button class="lightbox-next" aria-label="Próxima mídia">→</button>
+    <p class="lightbox-caption"></p>
+  </div>
+</body>
+</html>
